@@ -80,8 +80,8 @@ The duration and completion time of 15 GB at 1.5 MB/s:\
 ```sh
 git clone sophuwu.site/byterate
 cd byterate
-go build -trimpath -ldflags="-s -w" -o byterate
-sudo install byterate /usr/local/bin/byterate
+go build -trimpath -ldflags="-s -w" -o build/byterate cmd/cli.go
+sudo install build/byterate /usr/local/bin/byterate
 ```
 
 ## License
