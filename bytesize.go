@@ -65,7 +65,7 @@ func ParseSize(s string) (Size, error) {
 	}
 	s = strings.ToLower(s)
 	if strings.HasSuffix(s, "bit") {
-		s = strings.TrimPrefix(s, "bit")
+		s = strings.TrimSuffix(s, "bit")
 	} else {
 		num *= 8
 	}
