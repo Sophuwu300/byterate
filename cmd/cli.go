@@ -117,7 +117,7 @@ func main() {
 			if tdate.Equal(ndate.AddDate(0, 0, 1)) {
 				prnt = "Tomorrow "
 			} else if t.Before(ndate.AddDate(0, 0, 6)) {
-				prnt = t.Weekday().String() + " at " + prnt
+				prnt = t.Weekday().String() + " at "
 			} else if t.Year() == ndate.Year() {
 				prnt = "02 Jan "
 			} else {
